@@ -99,8 +99,6 @@ body {
 */
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -181,18 +179,16 @@ body {
 
 .hero {
   background: var(--dark);
-}
-
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 188px 0;
+  text-align: center;
 }
 
 .hero-title {
   max-width: 500px;
   font-size: 56px;
   line-height: 1.07;
+  margin: auto;
+  margin-bottom: 48px;
 
   text-align: center;
   letter-spacing: 0.02em;
@@ -202,18 +198,17 @@ body {
 }
 
 .modal-btn {
-  padding: 16px, 32px;
+  padding: 16px 32px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
-  padding: 0 auto;
 
   color: var(--white);
 
   background: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 
   cursor: pointer;
 }
@@ -228,8 +223,17 @@ body {
   |============================
 */
 
+.services {
+  padding-bottom: 0;
+}
+
 .services-list {
   display: flex;
+  gap: 24px;
+}
+
+.services-item {
+  flex-basis: calc(100% / 4);
 }
 
 .section-subtitle {
@@ -301,20 +305,14 @@ body {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-}
-
-.team-card {
-  background: #ffffff;
+  background: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 32px 16px;
 }
 
@@ -329,6 +327,7 @@ body {
 */
 .footer {
   background: var(--dark);
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -339,8 +338,7 @@ body {
 
   margin-bottom: 16px;
 
-  display: flex;
-  align-items: center;
+  display: block;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -365,6 +363,10 @@ body {
   | Portfolio
   |============================
 */
+
+.filters-menu {
+  padding-top: 96px;
+}
 
 .filters-list {
   display: flex;
@@ -414,16 +416,13 @@ body {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  text-align: left;
   padding: 32px 16px;
-  background: #ffffff;
-  border: 1px solid #e7e9fc;
-  border-top: none;
 }
 
 .portfolio-card-heading {
